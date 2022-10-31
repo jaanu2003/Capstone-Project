@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>SHOPPING WEBSITE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<style>
+    div {
+        color: black;
+        text-align: center;
+    }
+    
+    img {
+        height: 200px;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+    
+    button {
+        margin-top: 10px;
+    }
+    
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+    }
+    
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            color: green;
+        }
+    }
+    
+    .col:hover {
+        background-image: url("background1.jpg");
+    }
+</style>
+
+<body>
+    <div class="container fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 class="display-6" style="font-weight:bold;color:white;">HOUSE OF BOOKS</h2>
+            </div>
+
+        </div><br>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\mythology\ramayanam.webp" class="img rounded">
+                    <div class="caption">
+                        <p>SAMPOORNA RAMAYANAM</p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:50px;font-weight:bold;" name="cost" value="500/-"><del><small>900/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="SAMPOORNA RAMAYANAM">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="SAMPOORNA RAMAYANAM">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\mythology\thaalapatra.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>THALAPATRA GRANDHAM<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="430/-"><del><small>750/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="THALAPATRA GRANDHAM">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="THALAPATRA GRANDHAM">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\mythology\bhagavadgita.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>BHAGAVADGITA<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="350/-"><del><small>550/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="BHAGAVADGITA">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="BHAGAVADGITA">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\poetry\emily.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>SELECTED POEMS OF EMILY DICKINSON</p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:50px;font-weight:bold;" name="cost" value="500/-"><del><small>900/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="SELECTED POEMS OF EMILY DICKINSON">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="SELECTED POEMS OF EMILY DICKINSON">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\poetry\hughes.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>SELECTED POEMS OF LANGSTON HUGHES<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="430/-"><del><small>750/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="SELECTED POEMS OF LANGSTON HUGHES">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="SELECTED POEMS OF LANGSTON HUGHES">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\poetry\william.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>WILLAIM WORDSWORTH FAVORITE POEMS<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="350/-"><del><small>550/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="WILLAIM WORDSWORTH FAVORITE POEMS">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="WILLAIM WORDSWORTH FAVORITE POEMS">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\comic\dc.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>DC COMICS</p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:50px;font-weight:bold;" name="cost" value="500/-"><del><small>900/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="DC COMICS">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="DC COMICS">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\comic\captain.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>CAPTAIN AMERICA LIVING LEGEND <br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="430/-"><del><small>750/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="CAPTAIN AMERICA LIVING LEGEND ">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="CAPTAIN AMERICA LIVING LEGEND ">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\comic\finest.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>WORLD'S FINEST<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="350/-"><del><small>550/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="WORLD'S FINEST">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="WORLD'S FINEST">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\cartoons\horror.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>DEADLY INTENTIONS</p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:50px;font-weight:bold;" name="cost" value="500/-"><del><small>900/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="DEADLY INTENTIONS">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="DEADLY INTENTIONS">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\cartoons\fairytale.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>BOOK OF FAIRY TALES<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="430/-"><del><small>750/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="BOOK OF FAIRY TALES">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="BOOK OF FAIRY TALES">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\cartoons\waltdisney.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>WALTDISNEY COMICS DIGEST<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="350/-"><del><small>550/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="WALTDISNEY COMICS DIGEST">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="WALTDISNEY COMICS DIGEST">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\science\stars.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>THE CALCULATING STARS</p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:50px;font-weight:bold;" name="cost" value="500/-"><del><small>900/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="THE CALCULATING STARS">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="THE CALCULATING STARS">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\science\life.webp" class="img rounded">
+                    <div class="caption">
+                        <p>THE SCIENCE OF GETTING RICH<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="430/-"><del><small>750/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="THE SCIENCE OF GETTING RICH">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="THE SCIENCE OF GETTING RICH">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="C:\Users\JAHNAVI\Downloads\house-of-books\public\science\earth.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>THE GREATEST SHOW ON THE EARTH<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">COST: <input type="text" style="width:55px; font-weight:bold;" name="cost" value="350/-"><del><small>550/-</small></del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="THE GREATEST SHOW ON THE EARTH">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" class="btn btn-outline-warning" name="item" value="THE GREATEST SHOW ON THE EARTH">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+            </div>
+        </div><br>
+        <form action="cart" method="GET">
+            <center><input type="submit" class="btn btn-outline-secondary" style="width:30%; font-weight:bold; background-color:goldenrod" value="GO TO CART"></center>
+        </form><br><br>
+</body>
+
+</html>
